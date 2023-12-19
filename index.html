@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="./assets/index-ZXu1shwV.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-S3fsDhh6.css">
+  </head>
+  <body>
+    <center><h2>WebRTC</h2> Example! by <a href="https://github.com/developerSharif">developerSharif</a></center>
+    <div id="dashboard">
+      <button id="create_offer">Create Offer</button>
+      <textarea id="sdp_offer" cols="30" rows="3" placeholder="Past SDP Offer or Create One"></textarea>
+      <hr>
+      <button id="create_answer">Create Answer</button>
+      <textarea  id="sdp_answer" cols="30" rows="3" placeholder="SDP Answer"></textarea>
+      <hr>
+      <button id="add_answer">Add Answer</button>
+    </div>
+    <hr>
+    <div id="app">
+      <div id="streams">
+        <video autoplay id="localVideo"></video>
+        <video autoplay id="remoteVideo"></video>
+      </div>
+    </div>
+  </body>
+</html>
