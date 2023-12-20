@@ -3,6 +3,7 @@
 
 This is a simple WebRTC demo app that showcases the basic functionality of Web Real-Time Communication (WebRTC). It allows users to establish peer-to-peer audio and video communication directly in the browser.
 
+<img src="https://i.ibb.co/dbx38ks/How-is-Web-RTC-transforming-the-communication-landscape.webp">
 
 ## Features
 
