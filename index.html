@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="./assets/index-G0B84S7f.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-S3fsDhh6.css">
+    <title>WebRTC Demo App by developerSharif</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" crossorigin src="./assets/index-Nt_vuSht.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-QPFrbEWC.css">
   </head>
   <body>
-    <center><h2>WebRTC</h2> Example! by <a href="https://github.com/developerSharif">developerSharif</a></center>
-    <div id="dashboard">
+    <center><h2>WebRTC Demo App</h2><br><button id="menu"><i class="fa-solid fa-satellite-dish"></i></button><br><br> Developed! by <a href="https://github.com/developerSharif" target="_blank">Sharif</a> <br></center>
+    <div id="dashboard" class="hidden">
       <button id="create_offer">Create Offer</button>
       <textarea id="sdp_offer" cols="30" rows="3" placeholder="Past SDP Offer or Create One"></textarea>
       <hr>
@@ -18,6 +19,10 @@
       <textarea  id="sdp_answer" cols="30" rows="3" placeholder="SDP Answer"></textarea>
       <hr>
       <button id="add_answer">Add Answer</button>
+    </div>
+    <div id="controls">
+      <button id="muteButton"><i class="fa-solid fa-microphone"></i></button>
+      <button id="videoButton"><i class="fa-solid fa-video"></i></i></button>
     </div>
     <hr>
     <div id="app">
