@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <center><h2>WebRTC Demo App</h2><br><button id="menu"><i class="fa-solid fa-satellite-dish"></i></button><br><br> Developed! by <a href="https://github.com/developerSharif" target="_blank">Sharif</a> <br></center>
-    <div id="dashboard" class="hidden">
-      <button id="create_offer">Create Offer</button>
-      <textarea id="sdp_offer" cols="30" rows="3" placeholder="Past SDP Offer or Create One"></textarea>
-      <hr>
-      <button id="create_answer">Create Answer</button>
-      <textarea  id="sdp_answer" cols="30" rows="3" placeholder="SDP Answer"></textarea>
-      <hr>
-      <button id="add_answer">Add Answer</button>
+    <div class="head">
+      <h2>WebRTC Demo App</h2> Developed! by <a href="https://github.com/developerSharif" target="_blank">Sharif</a> <br> <button id="menu"><i class="fa-solid fa-plus"></i> Create Link</button> <br>
     </div>
-    <div id="controls">
+    <div id="dashboard" class="hidden">
+      <div>
+        <input class="form-control" type="text" placeholder="Room Link" readonly id="sdpOfferLink"> <button id="copy">Copy</button>
+      </div>
+      <button type="button" id="createLink">
+        Create Chat Link
+      </button>
+    </div>
+
+    <div id="controls" class="hidden">
       <button id="muteButton"><i class="fa-solid fa-microphone"></i></button>
       <button id="videoButton"><i class="fa-solid fa-video"></i></i></button>
+      <button id="closeChat"><i class="fa-solid fa-phone"></i></i></button>
     </div>
-    <hr>
-    <div id="app">
+
+    <div id="app" class="hidden">
       <div id="streams">
         <video autoplay id="localVideo"></video>
         <video autoplay id="remoteVideo"></video>
