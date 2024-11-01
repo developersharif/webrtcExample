@@ -109,40 +109,7 @@ if (roomId) {
         window.location.replace(window.location.origin + window.location.pathname)
       });
       // Create a Peer object
-      const peer = new Peer({
-        // host:'peerjs-server-tq94.onrender.com',
-        // port:80,
-        // path:'/peerjs/server',
-        // secure:true,
-        config:{
-          iceServers: [
-              {
-                urls: "stun:stun.relay.metered.ca:80",
-              },
-              {
-                urls: "turn:standard.relay.metered.ca:80",
-                username: "e437f719844bbfd0946a0ee1",
-                credential: "yOVlFtWtndW0oeen",
-              },
-              {
-                urls: "turn:standard.relay.metered.ca:80?transport=tcp",
-                username: "e437f719844bbfd0946a0ee1",
-                credential: "yOVlFtWtndW0oeen",
-              },
-              {
-                urls: "turn:standard.relay.metered.ca:443",
-                username: "e437f719844bbfd0946a0ee1",
-                credential: "yOVlFtWtndW0oeen",
-              },
-              {
-                urls: "turn:standard.relay.metered.ca:443?transport=tcp",
-                username: "e437f719844bbfd0946a0ee1",
-                credential: "yOVlFtWtndW0oeen",
-              },
-          ],
-        },
-          debug:1
-      });
+      const peer = new Peer();
 
       // Event handler for when a connection is established
       peer.on("open", async (id) => {
