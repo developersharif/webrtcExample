@@ -4,11 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "peer": "^1.0.2",
+    "peerjs": "^1.5.4"
   }
 }
